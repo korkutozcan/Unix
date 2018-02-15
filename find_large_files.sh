@@ -16,6 +16,7 @@ read size
 echo " "
 #
 # RedHat / CentOS / Fedora Linux  - find {/path/to/directory/} -type f -size +{size-in-kb}k -exec ls -lh {} \; | awk '{ print $9 ": " $5 }'
+#
 # Debian / Ubuntu Linux  - find {/path/to/directory/} -type f -size +{size-in-kb}k -exec ls -lh {} \; | awk '{ print $9 ": " $5 }'
 #
 find ${directory} -type f -size +${size}k -exec ls -lh {} \; | awk '{ print $9 ": " $5 }' | more
