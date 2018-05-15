@@ -1,0 +1,13 @@
+Follow the below steps to install virtualbox on Arch Linux based Systems.
+
+[Install VirtualBox and VirtualBox Host Module on Arch Linux]
+$ sudo pacman -S virtualbox virtualbox-host-modules-arch
+
+[Load VirtualBox module to the kernel]
+$ sudo modprobe vboxdrv
+
+[Install Virtualbox Extension Pack]
+$ yaourt virtualbox-ext-oracle
+
+[Adding Your Account to the vbox User Group]
+$ sudo gpasswd -a $USER vboxusers
